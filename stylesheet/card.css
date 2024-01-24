@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+body{
+    background: white;
+}
+.banner_bg{
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/22.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.banner_bg h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+    color: #fff;
+}
+.banner_bg h1 span{
+    color: red;
+    margin-right: 15px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+.container .heading{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid red;
+}
+.container .heading h3 span{
+    font-weight: 100;
+}
+.container .box{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+.container .btnn{
+    margin: 40px 0 70px 0;
+    background: maroon;
+    padding:15px 40px;
+    border-radius: 5px;
+}
+.container .btnn a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+
+
+.containe{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col1{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col1 ul li a ion-icon{
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer-col1 h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col1 h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    box-sizing: border-box;
+    background-color: maroon;
+    height: 2px;
+    width: 50px;
+}
+.footer-col1 ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col1 ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgba(104, 100, 100, 0.884);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col1 ul li a:hover{
+    color: white;
+    padding-left: 8px;
+}
+.footer-col1 .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer-col1 .social-links a:hover{
+    color: #24262b;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 769px){
+    .container .box{
+        flex-direction: column;
+    }
+    .container .box .dream{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+        flex-direction: column;
+    }
+    .container .box .dream{
+        width: 100%;
+    }
+}

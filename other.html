@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@600&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Apply Now | Study at Life Long Educational College</title>
+    <link rel="stylesheet" href="stylesheet/other.css">
+</head>
+<body>
+    <div class="contactus">
+        <form action="https://formsubmit.co/info@lifelongcollege.co.zw" method="POST"> 
+        <div class="box">
+            <div class="contact form">
+                <h3>Fill in your details</h3>
+                <form>
+                    <div class="formbox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" name="Name" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Surname</span>
+                                <input type="text" name="Surname" placeholder="Enter your surname" required>
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email Address</span>
+                                <input type="email" name="Email Address" placeholder="info@gmail.com" required>
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Phone</span>
+                                <input type="text" name="Mobile" placeholder="+263 772 288 528" required>
+                            </div>
+
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea placeholder="Write your results and message here...." name="Message"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact info">
+                <h3>Our contact info:</h3>
+                <div class="infobox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>89 RottenRow, Harare CBD</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="gmal.com">info@lifelongcollege.co.zw</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:+263773552990">0712 955 028 | 0777 863 039</a>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="mail-unread"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-wechat"></ion-icon></a></li>
+
+
+                        <h4>Wonderful work by Prince Collab </h4>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d949.5213739662723!2d31.038222785869614!3d-17.834626617354257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a4f768001f09%3A0xc442ef934c915993!2sLife%20Long%20Education%20College!5e0!3m2!1sen!2szw!4v1699369977873!5m2!1sen!2szw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+        </form>
+    </div>
+
+    
+        
+        <div class="popup" id="popup">
+            <img src="img/red.png">
+            <h2>Thank You!</h2>
+            <p>Your details have been successful submitted. We will notify you back on your email!</p>
+            <button type="button"  onclick="closePopup()">OK</button>
+        </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup")
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
